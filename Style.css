@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  --bg: #170f2c;
+  --bg2: #241638;
+  --pink: #ff9dbd;
+  --gold: #f4d69b;
+  --cream: #fff4ed;
+  --muted: #cbbbd3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 15% 15%, #573052 0%, transparent 40%),
+    radial-gradient(ellipse at 85% 85%, #372657 0%, transparent 45%),
+    var(--bg);
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.brand {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.counter {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 18px 110px;
+}
+
+.page {
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  padding: 45px 35px;
+  border: 1px solid #ffffff20;
+  border-radius: 25px;
+  background: #ffffff08;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 25px 90px #08041465;
+  position: relative;
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: appear .65s ease both;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.eyebrow, .chapter {
+  display: block;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(65px, 13vw, 100px);
+  margin: 20px 0;
+}
+
+h1 span, h2 span {
+  color: var(--pink);
+  font-style: italic;
+}
+
+h2 {
+  font-size: clamp(32px, 7vw, 48px);
+  margin: 18px 0 25px;
+}
+
+p {
+  color: #eadde9;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 13px auto;
+  max-width: 520px;
+}
+
+.envelope {
+  font-size: 65px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.illustration {
+  font-size: 65px;
+  margin: 15px 0;
+}
+
+@keyframes float {
+  50% { transform: translateY(-12px) rotate(4deg); }
+}
+
+.primary {
+  margin-top: 25px;
+  padding: 16px 25px;
+  border: none;
+  border-radius: 50px;
+  color: #29192f;
+  background: linear-gradient(120deg, var(--pink), var(--gold));
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 8px 30px #ff9dbd35;
+  transition: .3s;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px #ff9dbd65;
+}
+
+.primary span {
+  margin-left: 8px;
+}
+
+.hint {
+  margin-top: 35px;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.versus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.person {
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person small {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.vs {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  color: var(--pink);
+  font-style: italic;
+}
+
+.story-box {
+  background: #ffffff0c;
+  border: 1px solid #ffffff20;
+  border-radius: 18px;
+  padding: 25px 18px;
+  margin: 28px 0;
+}
+
+.box-icon {
+  font-size: 35px;
+}
+
+.story-box h3, .memory h3 {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+.split {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.split div {
+  flex: 1;
+  padding: 15px 5px;
+  border: 1px solid #ffffff25;
+  border-radius: 12px;
+  background: #ffffff0b;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.split strong {
+  color: var(--pink);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.highlight-text {
+  color: var(--pink);
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-style: italic;
+}
+
+.quote {
+  margin: 28px auto;
+  padding: 22px;
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--pink);
+  background: #ffffff0a;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+.memory {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 17px;
+  border: 1px solid #ffffff20;
+  background: #ffffff09;
+}
+
+.memory-icon {
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.memory h3 {
+  font-size: 19px;
+  margin: 0 0 5px;
+}
+
+.memory p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.big-heart {
+  font-size: 65px;
+  color: var(--pink);
+  animation: pulse 2s infinite;
+  margin: 15px;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.14); }
+}
+
+.final-flower {
+  font-size: 55px;
+  margin: 10px;
+  animation: float 3s infinite;
+}
+
+.letter-button {
+  border: 1px solid var(--gold);
+  background: #ffffff0c;
+  color: var(--cream);
+  border-radius: 50px;
+  padding: 16px 24px;
+  font-size: 14px;
+  margin: 20px 0;
+  transition: .3s;
+}
+
+.letter-button:hover {
+  background: #f4d69b20;
+  transform: scale(1.04);
+}
+
+.letter {
+  max-width: 520px;
+  margin: 20px auto;
+  padding: 28px 24px;
+  border-radius: 12px;
+  background: #fff5eb;
+  color: #4b3045;
+  text-align: left;
+  box-shadow: 0 15px 40px #0005;
+  animation: appear .7s ease;
+}
+
+.letter.hidden, .hidden {
+  display: none;
+}
+
+.letter-top {
+  text-align: center;
+  color: #b26a87;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.letter h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.letter p {
+  color: #4b3045;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 14px 0;
+}
+
+.letter-end {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.signature {
+  text-align: right;
+  color: #9b4e73;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.final-message {
+  margin-top: 30px;
+  animation: appear .8s ease;
+}
+
+.signature-name {
+  color: var(--pink);
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.secondary {
+  margin-top: 20px;
+  padding: 13px 22px;
+  border: 1px solid #ffffff40;
+  border-radius: 50px;
+  background: transparent;
+  color: var(--cream);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #bca9c8;
+}
+
+.nav-arrows {
+  position: fixed;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.nav-arrows button {
+  border: 1px solid #ffffff45;
+  background: #ffffff12;
+  color: var(--cream);
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.nav-arrows button:hover {
+  background: #ff9dbd35;
+}
+
+.nav-arrows span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+.star {
+  position: fixed;
+  pointer-events: none;
+  color: var(--gold);
+  opacity: .5;
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  to { opacity: .1; transform: scale(.5); }
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  pointer-events: none;
+  z-index: 100;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(700deg);
+    opacity: .1;
+  }
+}
+
+@media (max-width: 600px) {
+  .top { padding: 20px 6%; }
+  main { padding: 85px 13px 100px; }
+  .page { padding: 35px 20px; border-radius: 20px; }
+  p { font-size: 14px; }
+  .quote { font-size: 16px; padding: 17px; }
+  .memory { padding: 15px 12px; gap: 10px; }
+  .memory-icon { font-size: 25px; }
+  .split { gap: 8px; }
+  .split div { font-size: 11px; }
+  .letter { padding: 22px 17px; }
+  footer { font-size: 8px; letter-spacing: 2px; }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170f2c">
+  <meta name="description" content="Une surprise spéciale pour Oumou Coulibaly.">
+  <title>Ouvre-moi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <header class="top">
+    <span class="brand">♡ OUVRE-MOI</span>
+    <span class="counter" id="counter">01 / 07</span>
+  </header>
+
+  <main>
+
+    <!-- INTRODUCTION -->
+    <section class="page active" id="page1">
+      <div class="envelope">💌</div>
+      <span class="eyebrow">UNE SURPRISE POUR UNE PERSONNE SPÉCIALE</span>
+      <h1>Ouvre-<br><span>moi.</span></h1>
+      <p>Oumou, j'ai quelque chose à te montrer.<br>
+        Et cette fois, ce n'est pas un simple message.</p>
+      <button class="primary" onclick="nextPage()">Découvrir ma surprise <span>→</span></button>
+      <div class="hint">UNE PETITE HISTOIRE, RIEN QUE POUR TOI</div>
+    </section>
+
+    <!-- INTRODUCTION PERSONNELLE -->
+    <section class="page" id="page2">
+      <span class="chapter">01 — UNE ATTENTION PARTICULIÈRE</span>
+      <div class="illustration">🌷</div>
+      <h2>Pour toi,<br><span>Oumou Coulibaly.</span></h2>
+      <p>Je ne voulais pas simplement t'envoyer un banal « Joyeux anniversaire ».</p>
+      <p>Je voulais faire quelque chose de différent. Quelque chose qui raconte un peu notre histoire, nos souvenirs et surtout la place que tu occupes dans ma vie.</p>
+      <p>Alors prends quelques instants. Cette surprise est entièrement pour toi. ❤️</p>
+      <button class="primary" onclick="nextPage()">Notre histoire commence →</button>
+    </section>
+
+    <!-- LA RIVALITÉ -->
+    <section class="page" id="page3">
+      <span class="chapter">02 — LES ANCIENS RIVAUX</span>
+      <div class="versus">
+        <div class="person">😎<small>OUMAR</small></div>
+        <span class="vs">VS</span>
+        <div class="person">😉<small>OUMOU</small></div>
+      </div>
+      <h2>Qui aurait cru<br>à cette histoire ?</h2>
+      <p>À l'époque, nous étions rivaux. Et moi, dans mon esprit, il fallait absolument que je puisse t'affronter dans la même classe ! 😂</p>
+      <p>J'ai même fait un transfert du lycée Amion au lycée Monseigneur, juste pour ça.</p>
+      <div class="story-box">
+        <span class="box-icon">🏫</span>
+        <h3>Mais le destin avait son propre programme…</h3>
+        <p>Cette même année, le lycée Monseigneur a été divisé en deux.</p>
+        <div class="split">
+          <div><strong>LYCÉE 1</strong><br>Oumou 😌</div>
+          <div><strong>LYCÉE 2</strong><br>Oumar 😭</div>
+        </div>
+        <p>Encore séparés ! J'avais changé de lycée pour t'affronter et voilà le résultat. 😂</p>
+      </div>
+      <p class="highlight-text">Finalement, la vie avait peut-être prévu autre chose que cette rivalité.</p>
+      <button class="primary" onclick="nextPage()">Et la suite ? →</button>
+    </section>
+
+    <!-- COMPLICITÉ -->
+    <section class="page" id="page4">
+      <span class="chapter">03 — DE RIVAUX À BESTIES</span>
+      <div class="illustration">🤝</div>
+      <h2>Madame &<br><span>Monsieur Lettrini.</span></h2>
+      <p>Du second cycle au lycée, les années ont passé. Te rappelles-tu des lettres qu'on s'envoyais en 9e qui nous ont value ce fameux surnom Et ceux qui nous appelaient Madame et Monsieur Lettrini ne savaient peut-être pas qu'ils donnaient un nom à une belle histoire d'amitié.</p>
+      <div class="quote">
+        « On était partis pour être des rivaux. Je ne sais pas exactement à quel moment l'histoire a changé, mais aujourd'hui, je ne voudrais échanger notre amitié contre rien au monde. »
+      </div>
+      <p>On partage presque tout. Nos histoires, nos confidences, nos joies, nos problèmes et tellement d'autres choses.</p>
+      <p>Et ça, c'est précieux.</p>
+      <button class="primary" onclick="nextPage()">J'ai encore des choses à te dire →</button>
+    </section>
+
+    <!-- PETITES ANECDOTES -->
+    <section class="page" id="page5">
+      <span class="chapter">04 — NOS PETITS DÉLIRES</span>
+      <h2>Il faut quand même<br>qu'on en parle… 😂</h2>
+
+      <div class="memory">
+        <div class="memory-icon">👀</div>
+        <div>
+          <h3>Ces fameux yeux dormants</h3>
+          <p>Je ne sais pas comment tu fais pour avoir ce regard-là. Tes yeux ont leur propre personnalité ! 😂</p>
+        </div>
+      </div>
+
+      <div class="memory">
+        <div class="memory-icon">📅</div>
+        <div>
+          <h3>La date d'anniversaire</h3>
+          <p>Il faut aussi parler de mon incroyable talent à oublier pratiquement chaque année ta date d'anniversaire. Je ne sais vraiment pas comment je fais😭
+Mais je pense que c'est dû au conséquences de mon maux de tête chronique 😩💔</p>
+          <p><strong>Mais retiens ceci :</strong> ma mémoire peut me trahir mais jamais la place que tu as dans ma vie.</p>
+        </div>
+      </div>
+
+      <div class="memory">
+        <div class="memory-icon">💬</div>
+        <div>
+          <h3>Notre petit monde</h3>
+          <p>Le fait qu'on puisse pratiquement tout se raconter et tout partager. C'est une complicité que je ne prends pas pour acquise.</p>
+        </div>
+      </div>
+
+      <button class="primary" onclick="nextPage()">Maintenant, parlons sérieusement ❤️ →</button>
+    </section>
+
+    <!-- DÉCLARATION -->
+    <section class="page" id="page6">
+      <span class="chapter">05 — QUELQUE CHOSE DE SINCÈRE</span>
+      <div class="big-heart">♡</div>
+      <h2>Tu comptes<br><span>énormément.</span></h2>
+      <p>Oumou, je veux que tu saches quelque chose.</p>
+      <p>Je t'adore énormément. Tu es la seule fille que je considère véritablement comme une vraie amie, et je ne dis pas ça à la légère.</p>
+      <p>Tu es cette personne avec qui je peux être moi-même, partager absolument tout, rire, parler et traverser les moments difficiles.</p>
+      <p>Je suis heureux de t'avoir rencontrée. Et même si je ne te le dis pas tous les jours, ta présence dans ma vie a une vraie valeur.</p>
+      <div class="quote">
+        « Certaines amitiés sont difficiles à expliquer. On sait simplement qu'on a rencontré une personne qu'on ne voudrait pas perdre. »
+      </div>
+      <button class="primary" onclick="nextPage()">Une dernière chose, Oumou… →</button>
+    </section>
+
+    <!-- LETTRE FINALE -->
+    <section class="page" id="page7">
+      <span class="chapter">06 — POUR TON ANNIVERSAIRE</span>
+      <div class="final-flower">🌸</div>
+      <h2>Joyeux anniversaire,<br><span>Oumou !</span></h2>
+
+      <button class="letter-button" id="openLetter" onclick="openLetter()">
+        💌 Ouvrir ta lettre personnelle
+      </button>
+
+      <article class="letter hidden" id="letter">
+        <div class="letter-top">UNE LETTRE POUR TOI ♡</div>
+        <h3>Ma chère Oumou,</h3>
+        <p>En ce jour spécial, je voulais prendre un moment pour te rappeler à quel point tu es une personne importante pour moi. Ca fait 1 mois que je travaille sur ce site, pour te souhaiter un anniversaire spécial différentdes autres😅, j'espère le finir a temps avant le jour j de ton anniversaire 🥲</p>
+        <p>Quand je repense à notre histoire, je souris. Qui aurait imaginé que deux anciens rivaux du second cycle deviendraient de si bons amis ? Entre le transfert du lycée Amion, la division du lycée Monseigneur, nos délires et notre fameux titre de Madame et Monsieur Lettrini, nous avons quand même une histoire assez particulière ! 😂</p>
+        <p>Je veux te remercier pour cette amitié, pour nos partages, nos confidences et tous ces moments où nous avons été présents l'un pour l'autre.</p>
+        <p>Je te souhaite une vie remplie de santé, de paix, de réussite et de bonheur. Que tous tes projets prennent forme, que tes efforts portent leurs fruits et que tu rencontres toujours de belles choses sur ton chemin.</p>
+        <p>Ne doute jamais de ta valeur. Tu mérites sincèrement d'être heureuse.</p>
+        <p>Je t'adore énormément, Oumou. Merci d'être cette personne si particulière dans ma vie. J'espère qu'on aura encore des centaines de souvenirs à créer ensemble.</p>
+        <p class="letter-end">je suis plus que ravi d'avoir une si belle personne dans ma vie❤️</p>
+        <div class="signature">
+          Avec beaucoup d'affection,<br>
+          <strong>Ton éternel Monsieur Lettrini.</strong>
+        </div>
+      </article>
+
+      <div class="final-message hidden" id="finalMessage">
+        <div class="big-heart">❤️</div>
+        <h2>À notre histoire,<br>et à tous les chapitres à venir !</h2>
+        <p>Joyeux anniversaire encore, Madame Lettrini.</p>
+        <p class="signature-name">— Oumar ton Best.. </p>
+        <button class="secondary" onclick="restart()">↺ Revoir notre histoire</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>UNE PETITE CRÉATION FAITE AVEC LE CŒUR ♡</footer>
+
+  <div class="nav-arrows" id="navigation">
+    <button onclick="previousPage()" aria-label="Étape précédente">←</button>
+    <span id="navLabel">NOTRE HISTOIRE</span>
+    <button onclick="nextPage()" aria-label="Étape suivante">→</button>
+  </div>
+
+</body>
+</html>
